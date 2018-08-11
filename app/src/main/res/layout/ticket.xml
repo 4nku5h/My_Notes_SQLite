@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/d_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3pt"
+        android:background="@drawable/background_lay"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:padding="5dp"
+            android:text="Title"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:text="ContentThis site can’t be reached www.google.com took too long to respond. Try:  Checking the connection Checking the proxy and the firewall Running Windows Network Diagnostics" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/baseline_delete_black_24"
+                app:layout_constraintEnd_toStartOf="@+id/btn_edit"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/baseline_edit_black_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="0dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+</LinearLayout>
